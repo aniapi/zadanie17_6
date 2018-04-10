@@ -3,5 +3,11 @@ html
         title= name
     body
         h1= name
-        include ./form.pug
+        div.form.
+        form
+            | Podaj swoje imię: 
+            input(name='Imię')
+            br
+            | Podaj swoje nazwisko: 
+            input(name='Nazwisko')
         a(href= url) Zaloguj się
